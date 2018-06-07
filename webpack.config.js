@@ -12,5 +12,9 @@ module.exports = {
       test: /\.js$/, //regex check if the file getting loading ends with .js
       exclude: /node_modules/ //when you see a node file (not ours) dont include it
     }]
+  },
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'public')
   }
 };
